@@ -60,12 +60,52 @@ body {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 0;
-    height: 100%;
+    height: 97%;
 }
 
 .jumbotron .btn {
     font-size: 21px;
     padding: 14px 24px;
+}
+
+/* Beers */
+
+.beer {
+    .image {
+        background: url('../images/Pint-of-Beer@High.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 200px;
+    }
+    .title {
+        height: 100px;
+    }
+}
+
+/* Section colors */
+
+.intro {
+    background-color: #2AA876;
+}
+
+.pale-ale {
+    background-color: #D9B779;
+}
+
+.ipa {
+    background-color: #C77439;
+}
+
+.hefeweizen {
+    background-color: #E14700;
+}
+
+.porter {
+    background-color: #0A7B83;
+}
+
+.footer {
+    background-color: #333333;
 }
 
 /* Responsive: Portrait tablets and up */
