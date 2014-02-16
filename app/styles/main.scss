@@ -16,6 +16,7 @@ html {
 /* Space out content a bit */
 body {
     height: 100%;
+    z-index: 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -70,7 +71,16 @@ body {
 
 /* Beers */
 
+.beer-item {
+    height: 90%;
+
+    .beer-container {
+        height: 100%;
+    }
+}
+
 .beer {
+
     .image {
         background: url('../images/Pint-of-Beer@High.png') no-repeat;
         background-size: contain;
@@ -82,17 +92,22 @@ body {
     }
 }
 
+.beers {
+    height: 100%;
+    z-index: -1;
+}
+
 /* Section colors */
 
 .intro {
     background-color: #2AA876;
 }
 
-.pale-ale {
+.pale, .stout {
     background-color: #D9B779;
 }
 
-.ipa {
+.india {
     background-color: #C77439;
 }
 
@@ -106,6 +121,20 @@ body {
 
 .footer {
     background-color: #333333;
+    color: white;
+    height: 50%;
+    position: relative;
+    z-index: -1;
+
+    .footer-container {
+        position:fixed;
+        width: 100%;
+        bottom:0;
+        padding-bottom: 150px;
+        text-align: center;
+        z-index:-1;
+    }
+
 }
 
 /* Responsive: Portrait tablets and up */

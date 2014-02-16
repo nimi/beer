@@ -2,22 +2,14 @@
   <div ng-include="'partials/intro'"></div>
 </div>
 
-<div class="pale-ale jumbotron">
-  <div ng-include="'partials/pale-ale'"></div>
-</div>
+<div class="beers" ng-controller="BeerCtrl">
 
-<div class="ipa jumbotron">
-  <div ng-include="'partials/ipa'"></div>
-</div>
+  <div class="beer-item" ng-repeat="beer in beers">
+    <beer beername="{{beer.name}}"></beer>
+  </div>
 
-<div class="hefeweizen jumbotron">
-  <div ng-include="'partials/hefeweizen'"></div>
-</div>
+  <div class="footer">
+    <div ng-include="'partials/footer'"></div>
+  </div>
 
-<div class="porter jumbotron">
-  <div ng-include="'partials/porter'"></div>
-</div>
-
-<div class="footer jumbotron">
-  <div ng-include="'partials/footer'"></div>
 </div>
